@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- sidebar -->
+     <div class="d-flex">
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <!-- Your logo here -->
+        <button class="collapse-btn" id="collapse-btn">&#9776;</button>
+        <!-- Collapse button -->
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#"
+            ><span class="icon">🏠</span>
+            <span class="menu-text">Dashboard</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="icon">👤</span>
+            <span class="menu-text">Users</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><span class="icon">⚙️</span>
+            <span class="menu-text">Settings</span></a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="w-full ">
+      <div class=" main-content">
+        <div>
+          <div class="header">
+            <!-- Left: Search Bar -->
+            <div class="col-6">
+              <div class="search-bar border">
+                <input type="text" placeholder="Search..." />
+                <span class="search-icon">&#128269;</span> <!-- Search Icon -->
+              </div>
+            </div>
+          
+            <!-- Right: Icons (Settings, Notification, User) -->
+           <div class="col-6">
+            <div class="header-icons">
+              <div class="icon">
+                <i class="settings-icon">⚙️</i> <!-- Settings Icon -->
+              </div>
+              <div class="icon">
+                <i class="notification-icon">🔔</i> <!-- Notification Bell Icon -->
+              </div>
+              <div class="icon">
+                <i class="user-icon">👤</i> <!-- User Icon -->
+              </div>
+            </div>
+           </div>
+        </div>
+        <div class="user-table bg-white">
+          <div class="row d-flex justify-between">
+            <div class="col-4 d-flex align-items-center prospect" style="padding: 10px 13px;">
+              <p class="prospect-title">Prospect Intelligence</p>
+              <p class="leads">150 leads</p>
+            </div>
+            <div class="col-8 d-flex  align-items-center justify-end  filter-options">
+              <div class="search-bar border">
+                <input type="text" placeholder="Search..." />
+                <span class="search-icon"><i class="fa fa-search"></i></span> <!-- Search Icon -->
+              </div>
+              <div class="filter-bar">
+                <span><i class="fa fa-filter"></i>Filters</span>
+              </div>
+              <div class="upload-lead-btn">
+                <button><span><i class="fas fa-file-upload"></i></span> Upload Lead</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+           <div class="w-100 col-12">
+            <div class="table-container">
+              <table class="full-width-table">
+                <thead>
+                  <tr>
+                    <th>
+                      <input type="checkbox" name="select-all" id="select-all">
+                    </th>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Company</th>
+                    <th>Address</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="">
+                      <input type="checkbox" name="row1" id="row1">
+                    </td>
+                    <td class="profile">
+                     <div class="col-12 d-flex align-items-center justify-center">
+                      <div class="image">
+                        <img src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" class="user-image" id="user-image">
+                      </div>
+                      <div class="name">
+                        <p class="m-0">John Doe</p>
+                        <p class="m-0">jhondeo@gmail.com</p>
+                      </div>
+                     </div>
+                    </td>
+                    <td>Admin</td>
+                    <td>Apple</td>
+                    <td>123 Main St</td>
+                    <td> <span class="status-green">High Priority</span></td>
+                    <td class="action-icons"><i class="fa fa-edit"></i> <i class="fa fa-trash-o"></i></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="row2" id="row2">
+                    </td>
+                    <td class="profile">
+                      <div class="col-12 d-flex align-items-center justify-center">
+                       <div class="image">
+                         <img src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" >
+                       </div>
+                       <div class="name"> 
+                         <p class="m-0">James Smith</p>
+                         <p class="m-0">jhondeo@gmail.com</p>
+                       </div>
+                      </div>
+                     </td>
+                    <td>Manager</td>
+                    <td>Company B</td>
+                    <td>456 Elm St</td>
+                    <td> <span class="status-red">Warm Lead</span></td>
+                    <td class="action-icons"><i class="fa fa-edit"></i> <i class="fa fa-trash-o"></i></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Modal -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <div class="mb-3">
+      <h4 class="m-0">Customer Info</h4>
+      <span id="close-modal" class="close-btn">&times;</span> 
+    </div>
+    
+    <div class="border-1  ">   <!-- User Info Section -->
+
+     <div class="user-info">
+      <img src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D" alt="User Avatar" class="user-avatar">
+      <div class="user-details">
+        <h3>Jenny Wilson</h3>
+        <p>Product Manager</p>
+      </div>
+    </div>
+
+    <!-- Company Details -->
+    <div class="info-section">
+      <p class="bb-"><strong>Company:</strong> Facebook</p>
+      <p class="bb-"><strong>Website:</strong> <a href="#">Facebook.com</a></p>
+      <p class="bb-"><strong>Status:</strong> <span class="status-tag">High Priority</span></p>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="info-section">
+      <p class="bb-"><strong>Email:</strong> jennywilson@gmail.com</p>
+      <p class="bb-"><strong>Phone number:</strong> (555) 555–1234</p>
+      <p class="bb-"><strong>Address:</strong> 2118 Thornridge Cir, Syracuse, Manhattan, NY</p>
+    </div>
+
+    <!-- Social Media -->
+    <div class="info-section social-media bb-">
+      <p class=""><strong>Social Media:</strong></p>
+      <img src="x-icon.png" alt="X Icon" class="icon">
+      <img src="linkedin-icon.png" alt="LinkedIn Icon" class="icon">
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="info-section tech-stack bb-">
+      <p><strong>Tech Stack:</strong></p>
+      <img src="swift.png" alt="Swift Icon" class="icon">
+      <img src="vue.png" alt="Vue Icon" class="icon">
+      <img src="firebase.png" alt="Firebase Icon" class="icon">
+    </div>
+
+    <!-- Footer Buttons -->
+    <div class="modal-footer">
+      <button class="mail-btn"><i class="mail-icon"></i> Mail</button>
+      <button class="call-btn"><i class="call-icon"></i> Call</button>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+    <script>
+      // JavaScript to toggle sidebar collapse
+      const collapseBtn = document.getElementById("collapse-btn");
+      const sidebar = document.getElementById("sidebar");
+
+      collapseBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("collapsed");
+      });
+
+      // Select elements
+        const userImage = document.getElementById('user-image');
+        const modal = document.getElementById('modal');
+        const closeModal = document.getElementById('close-modal');
+
+        // Open modal on image click
+        userImage.addEventListener('click', () => {
+          modal.classList.add('visible');
+        });
+
+        // Close modal on close button click
+        closeModal.addEventListener('click', () => {
+          modal.classList.remove('visible');
+        });
+
+        // Optional: Close modal if user clicks outside the modal content
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+            modal.classList.remove('visible');
+          }
+        });
+
+    </script>
+  </body>
+</html>
