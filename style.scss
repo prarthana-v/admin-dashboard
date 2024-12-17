@@ -74,7 +74,7 @@ $col-width: 100% / $grid-columns;
 .row {
   display: flex;
   flex-wrap:wrap ;
-width: 100%;
+    width: 100%;
   align-items: center;
   // margin: auto;
 }
@@ -152,16 +152,52 @@ $collapsed-width: 60px;
 .sidebar {
   background-color: $sidebar-bg;
   height: 100vh;
-  transition: width 0.3s ease;
   color: white;
   padding-top: 20px;
   overflow: hidden;
-  padding-right: 50px;
   z-index: 1;
+  width: 250px;
+  transition: width 0.3s ease;
+
 }
 .sidebar.collapsed{
   padding-right: 0px;
   padding-left: 10px;
+  width: 60px;
+}
+
+
+@media (max-width: 992px) {
+  .sidebar{
+    width: 60px;
+  }
+  .main-content {
+    flex-grow: 1; // Take up the remaining space
+    background-color: #ffffff;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  .w-full{
+    width: 92%;
+  }
+}
+
+@media (max-width:992px) {
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+    .sidebar-menu{
+      padding-left: 10px;
+      li a .menu-text{      
+        display: none; // Hide text labels, show only icons
+    }
+    }
+  }
+  .collapse-btn {
+    display: none !important; // Hide the toggle button
+  }
 }
 .sidebar.collapsed .sidebar-header .collapse-btn{
   right: 10px;
@@ -249,8 +285,22 @@ $collapsed-width: 60px;
     }
   }
 }
-@media (max-width:600px) {
+@media (max-width:1200px) {
+  .table-container .full-width-table{
+    tbody{
+      tr{
+        .status{
+          padding: 0;
+          .status-green ,.status-red{
+            font-size: 12px;
+            padding: 10px 1px;
+          }
+        }
+      }
+    }
+  }
  }
+
 // Header styles
 .header {
   display: flex;
@@ -500,12 +550,7 @@ $collapsed-width: 60px;
   }
 
 }
-@media (max-width:600px) {
-  .status-green{
-    font-size: 12px;
-    padding: 0;
-  }
-}
+
 /* Modal Styles */
 .modal {
   position: fixed;
